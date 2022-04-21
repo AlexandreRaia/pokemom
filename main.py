@@ -22,7 +22,6 @@ def listar():
     con.close()
     return render_template('listar.html',dados = dados)
 
-
 if __name__ == "__main__":
     app.run()
 
