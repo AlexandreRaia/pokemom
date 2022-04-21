@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="jumbotron" xmlns="http://www.w3.org/1999/html">
+
+      {% for item in dados %}
+    <div class="row">
+     <div class="col-sm-4">
+        <div class="card" style="width: 18rem;">
+            <img src="{{item[2]}}" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Nº:{{item[0]}} {{item[1]}}</h5>
+            <p class="card-text">Some quick example text to build.</p>
+        </div>
+        </div>
+     </div>
+      {%endfor%}
+
+      {% endblock %}
+
+</div>
